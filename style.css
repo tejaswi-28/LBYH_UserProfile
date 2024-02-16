@@ -1,0 +1,299 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500&family=Inter:wght@700;800&family=Lalezar&family=Merriweather:wght@300;700;900&family=Roboto&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+  font-family: "Inter", sans-serif;
+  font-family: "Inter Tight", sans-serif;
+  font-family: "Lalezar", system-ui;
+  font-family: "Merriweather", serif;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-image: url("/bg.png");
+}
+.container-fluid{
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    padding-left: 5%;
+}
+.container-fluid h1{
+    font-size: 40px;
+    font-weight: bold;
+}
+.container-fluid span{
+    color: green;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+}
+#nav-container{
+    float: right;
+    display: flex;
+    background-color: #fff;
+    width: 80%;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px 0;
+}
+#nav-container .text{
+    margin-right: 55%;
+    padding-left: 5px;
+}
+#nav-container a{
+    color: #afaeae;
+    text-decoration: none;
+}
+#nav-container a:hover{
+    color: #0ef;
+}
+.nav-contianer a.active {
+    color: rgb(20, 20, 165);
+}
+#nav-container .search{
+    position: absolute;
+    background: #d6d6d6;
+    border-radius: 6px;
+    padding-left: 5px;
+    height: 20px;
+    padding-top: 5px;
+    margin-right: 15%;
+    width: 20%;
+}
+.search input{
+    border: none;
+    background-color: #d6d6d6;
+    border-radius: 4px;
+    padding-left: 4px;
+}
+#nav-container .logo{
+    padding: 0 10px;
+}
+#nav-container img{
+    width: 40px;
+    border-radius: 4px;
+    justify-content: flex-end;
+    align-items: end;
+    margin-left: 15px;
+    padding-right: 10px;
+}
+
+/* main content */
+#user-details{
+    margin: 40px 14rem;
+    justify-content: flex-start;
+    color: rgb(72, 76, 112);
+
+}
+#user-details h1{
+    font-size: 35px;
+    font-weight: bold;
+}
+i{
+    color: #afaeae;
+}
+.user{
+    display: flex;
+    margin: 30px;
+    justify-content: flex-start;
+    align-items: center;
+}
+.user img{
+    width: 10%;
+    border-radius: 100px;
+    border: 3px solid #000;
+}
+.user-name{
+    padding-left: 20px;
+}
+.user-name h4{
+    font-size: 22px;
+}
+.user-name p{
+    font-size: 13px;
+}
+form label{
+    font-size: 14px;
+    font-weight: 700;
+}
+form input{
+    padding: 5px;
+    margin-top: 10px;
+}
+.box1{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-top: 2px solid #b8b8a8;
+}
+.box1 div{
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: space-between;
+}
+.box1 div input{
+    width: 32rem;
+}
+.box1 label .biginput{
+    width: 100%;
+}
+
+.box2{
+    margin-top: 20px;
+    display: flex;
+    padding: 20px;
+    border-top: 2px solid #b8b8a8;
+    justify-content: space-between;
+}
+.box2 div{
+    border: 1px solid rgb(120, 120, 120);
+    margin-top: 10px;
+}
+.box2 div i{
+    padding: 0 3px;
+}
+.box2 input{
+    margin-top: 0;
+    width: 30rem;
+    border: none;
+}
+.box3{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-top: 2px solid #b8b8a8;
+}
+.box3 div{
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: space-between;
+}
+.box3 .inside{
+    border: 1px solid rgb(120, 120, 120);
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.box3 .inside i{
+    padding: 0 5px;
+}
+.box3 .inside input{
+    margin-top: 0;
+    width: 29rem;
+    border: none;
+}
+.box3 .inside input:hover{
+    border: none;
+}
+.box3 label .biginput{
+    width: 100%;
+}
+.btn{
+    display: flex;
+    justify-content: right;
+    align-items: flex-end;
+}
+.btn button{
+    margin-right: 30px;
+    width: 10%;
+    padding: 8px 0;
+    border-radius: 6px;
+    border-color: rgb(72, 76, 112);
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+}
+#cancel{
+    background-color: #fff;
+}
+#save{
+    background-color: rgb(72, 76, 112);
+    color: #fff;
+}
+#save:hover{
+    background-color: rgb(59, 65, 119);
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .container-fluid h1{
+        font-size: 30px;
+    }
+    #nav-container{
+        width: 70%;
+    }
+    #nav-container .text{
+        margin-right: 50%;
+    }
+    #nav-container .search{
+        padding-left: 5px;
+        margin-right: 0%;
+    }
+    #user-details{
+        margin: 30px 4rem;
+    }
+    .box1 div input{
+        width: 23rem;
+    }
+    .box1 label .biginput{
+        width: 100%;
+    }
+    .box2 input{
+        width: 20rem;
+    }
+    .box3 .inside input{
+        width: 18rem;
+    }
+    .box3 label .biginput{
+        width: 100%;
+    }
+    .btn button{
+        width: 13%;
+    }
+  }
+  
+  @media only screen and (max-width: 767px) {
+    .container-fluid h1{
+        font-size: 15px;
+        padding-left: 3%;
+    }
+    #nav-container{
+        flex-wrap: wrap;
+        width: 75%;
+    }
+    #nav-container .text{
+        margin-right: 30%;
+        font-size: 8px;
+    }
+    #nav-container .search{
+        margin-right: 0%;
+    }
+    #user-details{
+        margin: 20px 2rem;
+    }
+    .box1 div input{
+        width: 10rem;
+    }
+    .box1 label .biginput{
+        width: 100%;
+    }
+    .box2 input{
+        width: 10rem;
+    }
+    .box3 .inside input{
+        width: 13rem;
+    }
+    .box3 label .biginput{
+        width: 100%;
+    }
+    .btn button{
+        width: 20%;
+        font-size: 8px;
+    }
+  }
